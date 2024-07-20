@@ -17,19 +17,19 @@ function exibirMensagemInicial() {
 
 exibirMensagemInicial();
 
-// Adicione o ouvinte de evento após o campo de entrada ser criado
+// Adicione o ouvinte de evento após o campo de entrada ser criado.
 const inputNumeroSecreto = document.getElementById('input');
 inputNumeroSecreto.addEventListener('input', function() {
-  // Corrigindo a expressão regular para permitir todos os números de 0 a 9
+  // Corrigindo a expressão regular para permitir todos os números de 0 a 9.
   this.value = this.value.replace(/[^0-9]/g, '');
 
-  // Limitando a quantidade de caracteres para tamanho do número limite
+  // Limitando a quantidade de caracteres para tamanho do número limite.
   this.value = this.value.substring(0, limiteCaracter);
   
     // Remover zeros à esquerda
     this.value = this.value.replace(/^0+/, '');
   
-    // Limitar a entrada para não ultrapassar o número limite
+    // Limitar a entrada para não ultrapassar o número limite.
     if (Number(this.value) > numeroLimite) {
       this.value = numeroLimite;
     }
