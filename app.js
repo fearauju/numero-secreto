@@ -17,8 +17,6 @@ function exibirMensagemInicial() {
 
 exibirMensagemInicial();
 
-// ... (outros trechos do código)
-
 // Adicione o ouvinte de evento após o campo de entrada ser criado
 const inputNumeroSecreto = document.getElementById('input');
 inputNumeroSecreto.addEventListener('input', function() {
@@ -37,13 +35,10 @@ inputNumeroSecreto.addEventListener('input', function() {
     }
 });
 
-// ... (restante do código)
-
 function verificarChute() {
 
     let chute = document.querySelector('input').value;
     
-     // Validação do chute
      if (isNaN(chute) || chute === "") {
         alert('Caractere inválido. Digite apenas números entre 1 e 100.');
         limparCampo();
