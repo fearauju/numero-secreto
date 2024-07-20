@@ -11,7 +11,7 @@
  
 - `Funcionalidade 1:` Utilizei o evento addEventListener no código para monitorar e garantir que apenas números de 0-9 sejam digitados, nenhum outro tipo de caractere. Além de outras validações como não permitir digitar um valor maior do que o limite proposto, substituindo pelo valor máximo permitido.
  
-- `Funcionalidade 2:` Adicionei algumas condições para mostrar alguma mensagem caso o usuário envie um dado vazio. Se o fizer é exibido um alerta e executa uma função para mostrar a tela inicial do jogo.
+- `Funcionalidade 2:` Adicionei algumas condições para mostrar alguma mensagem caso o usuário envie um dado vazio. Se o fizer é exibido um alerta e volta a tela inicial do jogo.
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
