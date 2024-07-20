@@ -39,7 +39,6 @@ inputNumeroSecreto.addEventListener('input', function() {
 
 // ... (restante do código)
 
-
 function verificarChute() {
 
     let chute = document.querySelector('input').value;
