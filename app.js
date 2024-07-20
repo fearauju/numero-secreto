@@ -43,11 +43,14 @@ function verificarChute() {
 
     let chute = document.querySelector('input').value;
     
-    if (chute == '') {
-        alert('Caractere inválido. Digite apenas números entre 0 e 100.');
+     // Validação do chute
+     if (isNaN(chute) || chute === "") {
+        alert('Caractere inválido. Digite apenas números entre 1 e 100.');
         limparCampo();
         exibirMensagemInicial();
-        return;} else{
+        return;
+    } else{
+        chute = parseInt(chute);
             if (chute == numeroSecreto) {
                 exibirTextoNaTela('h1', 'Acertou!');
                 let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
